@@ -13,17 +13,17 @@ const data = reactive([
     {
         icon: 'mdi-calendar-account',
         title: 'Birth date',
-        value: '22 February, 2001',
+        value: '00 July, 2002',
     },
     {
         icon: 'mdi-city',
         title: 'Birth place',
-        value: 'Mykolaiv, Ukraine',
+        value: 'Cileungsi, Bogor',
     },
     {
         icon: 'mdi-compass-rose',
         title: 'Location',
-        value: 'Odesa, Ukraine',
+        value: 'Griya Alam Sentosa',
     },
 ]);
 </script>
