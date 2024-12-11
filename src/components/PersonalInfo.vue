@@ -13,7 +13,7 @@ const data = reactive([
     {
         icon: 'mdi-calendar-account',
         title: 'Birth date',
-        value: '00 July, 2002',
+        value: '09 July, 2004',
     },
     {
         icon: 'mdi-city',
