@@ -1,0 +1,49 @@
+[33mcommit 12ab31a78216523a69bafe42c569d9473209163c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: gazaluddin15 <111416225+gazaluddin15@users.noreply.github.com>
+Date:   Thu Dec 12 03:41:51 2024 +0700
+
+    Update PersonalInfo.vue
+
+[33mcommit 0e63d91e47edda668bad9b8f7db7532d6e79600d[m
+Merge: 64564e6 8b30280
+Author: Gazaluddin Zakwan <gazaluddin98@gmail.com>
+Date:   Thu Dec 12 02:29:53 2024 +0700
+
+    Merge branch 'main' of https://github.com/gazaluddin15/gazaluddin
+
+[33mcommit 64564e649fdfebe44ec9f313efeedd029b79d85c[m
+Author: Gazaluddin Zakwan <gazaluddin98@gmail.com>
+Date:   Thu Dec 12 02:29:47 2024 +0700
+
+    Update package-lock.json, update profile components
+
+[33mcommit 8b302809d7f81aa5ee9f0986b38faa36f648538b[m
+Author: gazaluddin15 <111416225+gazaluddin15@users.noreply.github.com>
+Date:   Thu Dec 12 02:09:29 2024 +0700
+
+    Update PersonalInfo.vue
+
+[33mcommit 7946f39ba57aeccfd7d578b167fd9dbd9cac7019[m
+Merge: bfa4bcc cbe69dd
+Author: Gazaluddin Zakwan <gazaluddin98@gmail.com>
+Date:   Thu Dec 12 01:19:41 2024 +0700
+
+    Merge branch 'main' of https://github.com/gazaluddin15/gazaluddin
+
+[33mcommit bfa4bcc0a65f639b9f64b100f7d949e4ce8a859c[m
+Author: Gazaluddin Zakwan <gazaluddin98@gmail.com>
+Date:   Thu Dec 12 01:07:54 2024 +0700
+
+    Initial commit
+
+[33mcommit cbe69dd9b234410ecff2b321030a9c7f5cd846a9[m
+Author: gazaluddin15 <111416225+gazaluddin15@users.noreply.github.com>
+Date:   Thu Dec 12 00:56:08 2024 +0700
+
+    Add files via upload
+
+[33mcommit b9f954ee9ed3c2cc59535f0db4b97badafb3a0c1[m
+Author: gazaluddin15 <111416225+gazaluddin15@users.noreply.github.com>
+Date:   Thu Dec 12 00:55:06 2024 +0700
+
+    Initial commit
