@@ -1,5 +1,5 @@
 <script setup>
-
+import { defineComponent, reactive } from 'vue';
 
 defineComponent({
     name: 'PersonalInfo',
