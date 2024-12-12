@@ -22,16 +22,10 @@ const profile = reactive({
 <template>
     <div class="container">
         <div class="profile">
-            <div class="profile__image">
-                <v-avatar :size="smAndDown ? 200 : 300">
-                    <v-img src="/images/gaza.jpg" lazy-src="/images/gaza.jpg" alt="Profile avatar" title="Profile avatar"></v-img>
-                </v-avatar>
-            </div>
             <div class="profile__text">
                 <h1
                     class="text-uppercase font-weight-regular text-primary"
-                    :class="[xs ? 'text-h4' : 'text-h3', { 'mt-5': smAndDown }]"
-                >
+                    :class="[xs ? 'text-h4' : 'text-h3', { 'mt-5': smAndDown }]">
                     {{ profile.fullName }}
                 </h1>
                 <h2 class="text-h6 text-muted font-weight-light mt-3">
@@ -60,13 +54,19 @@ const profile = reactive({
 <style scoped>
 /* Main container styling */
 .container {
-    max-width: 1440px;
+    max-width: 2100px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 12px;
+    background-color: #23abff; /* Latar belakang premium */
+    border-radius: 16px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 12px 50px rgba(0, 0, 0, 0.1);
 }
 
 /* Profile section styling */
@@ -80,35 +80,48 @@ const profile = reactive({
 
 .profile:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
-.profile__image {
-    margin-right: 30px;
-}
-
+/* Profile text styles */
 .profile__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 20px;
 }
 
 /* Profile heading text styles */
+/* Profile heading text styles */
 .profile__text h1 {
-    font-size: 2.5rem;
-    color: #3f51b5;
-    font-weight: 700;
+    font-size: 3rem;
+    color: #000000; /* Mengubah warna nama menjadi hitam */
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.profile__text h1:hover {
+    color: #000000; /* Warna hitam tetap saat hover */
+    transform: translateX(5px);
 }
 
 .profile__text h2 {
-    font-size: 1.6rem;
-    color: #9e9e9e;
+    font-size: 1.8rem;
+    color: #000000; /* Mengubah warna posisi menjadi hitam */
     font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
     margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.profile__text h2:hover {
+    color: #0288d1; /* Warna biru terang saat hover */
 }
 
 /* Mobile view */
@@ -116,10 +129,6 @@ const profile = reactive({
     .profile {
         flex-direction: column;
         align-items: center;
-    }
-
-    .profile__image {
-        margin-bottom: 20px;
     }
 
     .profile__text h1,
@@ -136,33 +145,36 @@ const profile = reactive({
 .block__row {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
 }
 
-/* Card-like block element */
+/* Block element styling */
 .block__element {
     background-color: #ffffff;
-    padding: 30px;
+    padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .block__element:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
 }
 
 /* Section headers inside blocks */
 .block__element h3 {
     color: #3f51b5;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-/* Media queries */
+/* Media queries for tablet and mobile screens */
 @media (max-width: 991px) {
     .block__element-1 {
         flex: 0 0 100%;
@@ -175,18 +187,61 @@ const profile = reactive({
     }
 }
 
-/* Styling the block elements for smaller screens */
 @media (max-width: 576px) {
     .profile__text h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .profile__text h2 {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
     }
 
     .block__element {
-        padding: 20px;
+        padding: 25px;
     }
+}
+
+/* Enhanced background and hover effects for Profile Image */
+.profile__image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #0288d1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile__image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylish Links */
+a {
+    color: #0288d1;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6a1b9a;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* Floating action button */
+.v-btn.fab {
+    background-color: #6a1b9a;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.v-btn.fab:hover {
+    background-color: #9c27b0;
+    transform: translateY(-5px);
 }
 </style>
