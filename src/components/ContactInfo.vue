@@ -35,7 +35,7 @@ const data = reactive([
         icon: 'mdi-linkedin',
         title: 'LinkedIn',
         value: 'gazaluddin-zakwan',
-        href: 'https://www.linkedin.com/in/gazaluddin-zakwan-a890902a1//',
+        href: 'https://www.linkedin.com/in/gazaluddin-zakwan-a890902a1/',
         target: '_blank',
     },
     {
@@ -76,7 +76,8 @@ const data = reactive([
 .header {
     color: #6a1b9a;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Menambahkan ruang yang lebih besar di bawah header */
+    text-align: center; /* Menjaga header tetap di tengah */
 }
 
 .contact-info__item {
@@ -91,12 +92,13 @@ const data = reactive([
 
 .contact-info__icon {
     color: #6a1b9a;
+    margin-right: 15px; /* Menambah ruang di antara ikon dan teks */
 }
 
 .contact-info__content {
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    align-items: flex-start; /* Menyelaraskan konten ke kiri */
 }
 
 .title {
@@ -104,11 +106,13 @@ const data = reactive([
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 5px;
+    font-size: 1rem; /* Menyelaraskan ukuran font title */
 }
 
 .value {
     color: #6a1b9a;
     text-decoration: none;
+    font-size: 0.9rem; /* Ukuran font yang sedikit lebih kecil untuk value */
     transition: color 0.3s ease;
 }
 
